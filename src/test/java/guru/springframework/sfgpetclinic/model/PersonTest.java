@@ -1,5 +1,6 @@
 package guru.springframework.sfgpetclinic.model;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,6 +14,12 @@ class PersonTest {
         assertAll("Test props set",
                 () -> assertEquals("Joe", person.getFirstName()),
                 () -> assertEquals("Buck", person.getLastName()));
+    }
+
+    @Test
+    @RepeatedTest(10)
+    void myRepeatedTest() {
+        // toDo
     }
 
 }
